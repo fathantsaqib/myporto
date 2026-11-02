@@ -1,0 +1,174 @@
+@page {
+  size: A4 portrait;
+  margin: 10mm;
+}
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    scroll-behavior: auto !important;
+    transition: none !important;
+  }
+
+  html,
+  body,
+  #root,
+  .page-enter,
+  main {
+    width: auto !important;
+    min-width: 0 !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    height: auto !important;
+    overflow: visible !important;
+  }
+
+  body {
+    background: var(--paper);
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+
+  .site-header {
+    position: static;
+    top: auto;
+    height: auto;
+    min-height: 0;
+    margin-bottom: 0;
+    backdrop-filter: none;
+  }
+
+  .site-header.is-scrolled .nav-dock {
+    position: static;
+    transform: none;
+  }
+
+  .menu-toggle {
+    display: none !important;
+  }
+
+  .nav-panel {
+    position: static;
+    inset: auto;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4mm;
+    border: 0;
+    background: transparent;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+  }
+
+  .nav-links {
+    flex-direction: row;
+    gap: 4mm;
+  }
+
+  .theme-toggle {
+    display: none;
+  }
+
+  .nav-link {
+    width: auto;
+    font: 700 8px/1 "Manrope", sans-serif;
+  }
+
+  .hero {
+    min-height: 0;
+    padding: 12mm 4vw 8mm;
+    grid-template-columns: minmax(0, 1.25fr) minmax(0, 0.75fr);
+    overflow: visible;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .hero h1 {
+    font-size: clamp(64px, 10vw, 120px);
+  }
+
+  .hero-kicker {
+    margin-bottom: 6mm;
+  }
+
+  .page-enter,
+  [data-reveal],
+  [data-reveal].is-visible {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+
+  .page-hero,
+  .contact-main {
+    min-height: 0;
+    height: auto;
+  }
+
+  .hero-portrait-wrap {
+    min-height: 0;
+    height: 110mm;
+  }
+
+  .hero-portrait {
+    height: 100%;
+  }
+
+  .filters {
+    position: static;
+  }
+
+  .footer {
+    min-height: 0;
+  }
+
+  .visual-album-cover {
+    height: 100mm;
+    min-height: 0;
+  }
+
+  .visual-file-preview {
+    height: 90mm;
+    min-height: 0;
+  }
+
+  .featured-projects,
+  .work-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 12mm;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .project-card:nth-child(even) {
+    margin-top: 0;
+  }
+
+  .visual-album-page {
+    overflow: visible;
+  }
+
+  .featured-projects,
+  .work-grid,
+  .visual-archive,
+  .visual-expanded-album,
+  .visual-album-page,
+  .project-card,
+  .visual-collection-card,
+  figure {
+    break-inside: auto;
+    page-break-inside: auto;
+  }
+
+  .project-card-info,
+  .visual-collection-heading,
+  .skill-profile > article {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+}
