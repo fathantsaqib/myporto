@@ -1,5 +1,8 @@
 {
   "description": "Showcases interactive portfolio projects with engaging animations across multiple pages to highlight creative work effectively.",
+  "icons": {
+    "icon": "/logo.svg?v=2"
+  },
   "robots": {
     "index": false
   },
