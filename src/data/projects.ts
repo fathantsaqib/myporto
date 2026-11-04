@@ -289,14 +289,14 @@ export const projects: Project[] = [
 
     title: "BAJIKA WEDDING",
 
-    client: "Bajika Wedding Organizer · Final Research",
+    client: "Bajika Wedding Organizer · Undergraduate thesis",
 
     year: "2026",
 
-    subtitle: "Integrated Wedding Organizer Website & Staff Dashboard",
+    subtitle: "Wedding Website & Staff Dashboard Prototypes",
 
     description:
-      "A research-led wedding organizer platform that connects client service information with a shared workspace for staff.",
+      "A research-led UI/UX design for a wedding organizer, delivered as high-fidelity Figma prototypes for prospective clients and staff.",
 
     tags: [
       "Design Thinking",
@@ -336,14 +336,14 @@ export const projects: Project[] = [
 
     narrative: {
       context:
-        "Clients had to ask repeatedly for package, pricing, process, and date availability details, while staff managed bookings and records across separate chats and tools.",
-      task: "My task was to understand both client and staff needs, then shape a connected experience that makes service information easier to find and daily operations easier to manage.",
+        "Prospective clients had to ask repeatedly about packages, pricing, process, and date availability. Staff managed bookings and records across WhatsApp, Instagram, and separate notes.",
+      task: "My task was to understand staff workflows and the client needs they heard about daily, then design a connected experience that makes service information easier to find and operations easier to manage.",
       solution:
-        "The project brings together a public website for prospective clients and an internal workspace for staff, with clearer service discovery and more organized booking information.",
+        "Two connected high-fidelity Figma prototypes: a public website for prospective clients to explore services and request bookings, and a staff dashboard for client records, booking statuses, event schedules, guest lists, and notifications.",
       process:
-        "Using five Design Thinking stages, I observed workflows, gathered open-ended responses from six staff members, mapped user needs, built a shared design system, and tested high-fidelity prototypes in Maze.",
+        "Across five Design Thinking stages, I observed a live event and gathered open-ended responses from the owner and five staff members. I mapped one use-case diagram and 12 activity diagrams, created a shared design system, and tested the prototypes in Maze.",
       outcome:
-        "Testing resulted in SUS scores of 84 for staff and 80.75 for clients; all six UEQ dimensions were positive, and client MAUS reached the high usability range. The results also showed that complex staff tasks need more attention in the next iteration.",
+        "SUS scores were 84 for staff and 80.75 for prospective clients. All six UEQ dimensions were positive; client tasks scored in the High MAUS range, while staff tasks scored Medium. The prototype was not built or deployed, and the study did not include a retest after proposed improvements.",
     },
   },
 ]

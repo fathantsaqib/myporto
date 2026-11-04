@@ -1497,6 +1497,12 @@
   background: var(--bajika-card);
 }
 
+.bajika-gallery-grid img.bajika-client-discovery-image {
+  height: auto;
+  aspect-ratio: auto;
+  object-fit: contain;
+}
+
 .bajika-gallery-grid figcaption {
   padding-top: 12px;
   font-size: 9px;

@@ -10,9 +10,8 @@ import { ToolLogo } from "../components/ToolLogo"
 
 import { softwareTools } from "../data/softwareTools"
 
-const featuredProjects = projects.filter(
-  (project) =>
-    project.slug === "berani-bersinar" || project.slug === "bajika-wedding",
+const featuredProjects = ["bajika-wedding", "berani-bersinar"].flatMap(
+  (slug) => projects.filter((project) => project.slug === slug),
 )
 
 export function Home({ navigate }: { navigate: (path: string) => void }) {

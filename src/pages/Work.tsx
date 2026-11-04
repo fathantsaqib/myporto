@@ -23,15 +23,28 @@ export function Work({
 }) {
   const filters: WorkFilter[] = ["All", "Dashboard", "Research", "Responsive"]
 
-  const visible = useMemo(() => {
-    if (filter === "All") return projects
+  const orderedProjects = useMemo(() => {
+    const featuredProject = projects.find(
+      (project) => project.slug === "bajika-wedding",
+    )
 
-    return projects.filter((project) =>
+    return featuredProject
+      ? [
+          featuredProject,
+          ...projects.filter((project) => project !== featuredProject),
+        ]
+      : projects
+  }, [])
+
+  const visible = useMemo(() => {
+    if (filter === "All") return orderedProjects
+
+    return orderedProjects.filter((project) =>
       project.tags.some((tag) =>
         tag.toLowerCase().includes(filter.toLowerCase()),
       ),
     )
-  }, [filter])
+  }, [filter, orderedProjects])
 
   return (
     <main>
