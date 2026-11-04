@@ -195,7 +195,7 @@ export function BajikaCaseStudy({
           <h2>A CALM VISUAL LANGUAGE FOR A HIGH-EMOTION SERVICE.</h2>
         </div>
         <img
-          src="/assets/bajika-design-system.jpg"
+          src="/assets/sistem-desain.png"
           alt="Bajika visual design system"
         />
         <p>
